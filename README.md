@@ -8,6 +8,27 @@
 
 - Reliable, will work the same on any input
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Insertion Sort
 
 - Imagine picking up a playing card into your hand
@@ -21,13 +42,45 @@
 
 - Can perform differently with different inputs
 
-#### The above run in Quadratic Time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Selection and Insertion sorts run in Quadratic Time
 - i.e. if we _double_ the size of input, -> _4x_ time
 - Boo! ^
 - This also means, if we _half_ the size of the input -> _(1/4)x_ time
 - Yay! ^
 - Can we use this to our advantage?
 - If we had two sorted halves, can we produce full sorted result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Mergesort
 - Divide And Conquer
@@ -42,7 +95,47 @@
 - How do we think about calculating runtime??
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### NlogN is the best we can do
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Quicksort
 - Divide and Conquer
