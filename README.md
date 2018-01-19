@@ -10,7 +10,7 @@
 
 ## Algorithms
 
-### Selection Sort: Runtime (?)
+### Selection Sort: Runtime O(n)
 
 - Find the minimum (whats the runtime of this?? O(n))
 - Move minimum to the front (swap)
@@ -50,7 +50,7 @@ const swap = (arr, index1, index2) => {
 
 
 
-### Insertion Sort: Runtime (?)
+### Insertion Sort: Runtime O(n)
 
 - Imagine picking up a playing card into your hand
 - draw another card, if it's greater than current card, leave it in place
@@ -103,7 +103,7 @@ const swap = (arr, index1, index2) => {
 
 
 
-## Mergesort: Runtime (?)
+## Mergesort: Runtime O(n * log n)
 - Divide And Conquer
 - split in half
 - sort each half (recursive step)
@@ -158,7 +158,7 @@ const swap = (arr, index1, index2) => {
 
 
 
-## Quicksort: Runtime (?)
+## Quicksort: Runtime O(n * log n)
 - Divide and Conquer
 - Harder split, Easy join
 - determine if elem should go in high half or low half (partitioning)
