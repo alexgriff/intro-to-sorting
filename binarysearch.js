@@ -1,26 +1,32 @@
+// Binary Search
+// Q: What's the runtime? A: O(logN)
+
 const binarySearch = (arr, target) => {
-  // console.log(`binarySearch is called`);
   console.log(`Remaining elements to search: ${arr.length}`);
 
   const midpoint = Math.floor(arr.length / 2);
   const middle = arr[midpoint];
 
-  if (arr.length <= 1) {
-    return middle === target ? target : false;
-  }
+  const found = middle === target ? target : false;
 
-  if (middle === target) {
-    return target;
-  } else if (middle >= target) {
-    return binarySearch(arr.slice(0, midpoint), target);
-  } else if (middle < target) {
-    return binarySearch(arr.slice(midpoint), target);
+  if (arr.length <= 1 || found) {
+    return found;
+  } else {
+    if (middle >= target) {
+      // search first half
+      return binarySearch(arr.slice(0, midpoint), target);
+    } else {
+      // search second half
+      return binarySearch(arr.slice(midpoint), target);
+    }
   }
 };
 
+// Linear Search
+// Q: What's the runtime? A: O(n)
+
 const linearSearch = (arr, target) => {
   for (let i = 0; i < arr.length; i++) {
-    // console.log(`linearSearch in the loop`);
     console.log(`Remaining elements to search: ${arr.length - i}`);
 
     const elem = arr[i];

@@ -1,13 +1,33 @@
-### Selection Sort
+# Sorting
 
-- Find the minimum
-- Move minimum to the front
+## Resources
+* [USF Comparison Sorting Demo](http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
+* [Color Visualizations Gifs](https://imgur.com/gallery/voutF)
+* [Youtube Bars & Sound](https://www.youtube.com/watch?v=kPRA0W1kECg)
+* [Youtube Color Circle](https://www.youtube.com/watch?v=y9Ecb43qw98)
+* [Barack Obama Google Interview](https://www.youtube.com/watch?v=k4RRi_ntQc8)
+* [Algorythmics](https://www.youtube.com/watch?v=lyZQPjUT5B4)
+
+## Algorithms
+
+### Selection Sort: Runtime (?)
+
+- Find the minimum (whats the runtime of this?? O(n))
+- Move minimum to the front (swap)
 - Find minimum of rest
 - Move it to the front (now the second position)
 - repeat...
 
 - Reliable, will work the same on any input
 
+```js
+const swap = (arr, index1, index2) => {
+  const temp = arr[index1];
+  arr[index1] = arr[index2];
+  arr[index2] = temp;
+  return arr;
+};
+```
 
 
 
@@ -29,7 +49,8 @@
 
 
 
-### Insertion Sort
+
+### Insertion Sort: Runtime (?)
 
 - Imagine picking up a playing card into your hand
 - draw another card, if it's greater than current card, leave it in place
@@ -82,7 +103,7 @@
 
 
 
-## Mergesort
+## Mergesort: Runtime (?)
 - Divide And Conquer
 - split in half
 - sort each half (recursive step)
@@ -114,7 +135,7 @@
 
 
 
-#### NlogN is the best we can do
+#### n * log n is the best we can do
 
 
 
@@ -137,11 +158,11 @@
 
 
 
-## Quicksort
+## Quicksort: Runtime (?)
 - Divide and Conquer
 - Harder split, Easy join
 - determine if elem should go in high half or low half (partitioning)
-- move things closer to where they need to ho (swap 'em)
+- move things closer to where they need to go (swap 'em)
 - look at sub-section of arr, determine if elem should go in high half or low half, repeat...
 
 - Partition step
