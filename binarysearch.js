@@ -7,9 +7,9 @@ const binarySearch = (arr, target) => {
   const midpoint = Math.floor(arr.length / 2);
   const middle = arr[midpoint];
 
-  // if (arr.length <= 1) {
-  //   return middle === target ? target : false;
-  // }
+  if (arr.length <= 1) {
+    return middle === target ? target : false;
+  }
 
   if (middle === target) {
     // we found the thing
